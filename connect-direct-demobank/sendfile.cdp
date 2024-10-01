@@ -1,0 +1,18 @@
+sendfile process snode=FINTECH
+
+step01 copy
+
+from
+(
+file = /home/demobank/test2.txt
+pnode
+)
+
+to
+(
+file = /home/fintech/test2.txt
+snode
+disp = rpl
+)
+
+pend;

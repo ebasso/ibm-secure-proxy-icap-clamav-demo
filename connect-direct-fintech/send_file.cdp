@@ -1,0 +1,18 @@
+send_file process snode=DEMOBANK
+
+step01 copy
+
+from
+(
+file = /home/fintech/novirus.txt
+pnode
+)
+
+to
+(
+file = /home/demobank/novirus.txt
+snode
+disp = rpl
+)
+
+pend;

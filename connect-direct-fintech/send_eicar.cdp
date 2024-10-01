@@ -1,0 +1,21 @@
+# Get file with this url
+# wget https://secure.eicar.org/eicar_com.zip
+#
+send_eicar process snode=DEMOBANK
+
+step01 copy
+
+from
+(
+file = /home/fintech/eicar_com.zip
+pnode
+)
+
+to
+(
+file = /home/demobank/eicar_com.zip
+snode
+disp = rpl
+)
+
+pend;
